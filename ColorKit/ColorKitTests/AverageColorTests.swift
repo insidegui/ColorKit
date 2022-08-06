@@ -6,6 +6,8 @@
 //  Copyright © 2020 BorisEmorine. All rights reserved.
 //
 
+#if os(iOS)
+
 import XCTest
 @testable import ColorKit
 
@@ -46,3 +48,5 @@ class AverageColorTests: XCTestCase {
     }
     
 }
+
+#endif

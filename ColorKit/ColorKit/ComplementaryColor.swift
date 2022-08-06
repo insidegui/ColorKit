@@ -6,8 +6,11 @@
 //  Copyright © 2020 BorisEmorine. All rights reserved.
 //
 
-import Foundation
+#if os(iOS)
 import UIKit
+#else
+import Cocoa
+#endif
 
 extension UIColor {
     

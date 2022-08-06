@@ -6,7 +6,12 @@
 //  Copyright © 2020 BorisEmorine. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
+#else
+import Cocoa
+#endif
+
 import CoreImage
 
 /// A simple structure containing a color, and a frequency.

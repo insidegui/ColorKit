@@ -6,7 +6,12 @@
 //  Copyright © 2020 BorisEmorine. All rights reserved.
 //
 
+#if os(iOS)
 import UIKit
+#else
+import Cocoa
+public typealias UIColor = NSColor
+#endif
 
 extension UIColor {
     

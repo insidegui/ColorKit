@@ -8,6 +8,11 @@
 
 import XCTest
 
+#if os(macOS)
+import Cocoa
+typealias UIColor = NSColor
+#endif
+
 class LabTests: XCTestCase {
 
     func testGreen() {

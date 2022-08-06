@@ -1,13 +1,12 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "ColorKit",
-    platforms: [
-        .iOS(.v13),
-    ],
+    defaultLocalization: .init("en_US"),
+    platforms: [.iOS(.v13), .macOS(.v12)],
     products: [
         .library(
             name: "ColorKit",
@@ -21,6 +20,5 @@ let package = Package(
             name: "ColorKitTests",
             dependencies: ["ColorKit"],
             path: "ColorKit/ColorKitTests"),
-    ],
-    swiftLanguageVersions: [SwiftVersion.v5]
+    ]
 )
